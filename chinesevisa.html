@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<!--SERVICES PAGE OF BELL TRAVEL WEBSITE, Created by: Randy Ding-->
+<html>
+    <head>
+        <title>Bell Travel</title>
+        <link rel="stylesheet" href="header-footer.css"/>
+        <link rel="stylesheet" href="chinesevisa.css"/>
+
+    </head>
+
+
+    <body>
+        <!--header of page-->
+        <header>
+            <div class="banner">
+                <li class="logo"><a href="index.html"><img src="images/logo - new.png" height="50"></a></li>
+                <ul>
+                    <li>
+                        <img src="images/icons/icons8-phone-50.png" height="25px">
+                        519-771-9318
+                    </li>
+                    <li>
+                        <img src="images/icons/icons8-location-50.png" height="25px">
+                        388 St Paul Ave, Brantford, ON
+                    </li>
+                    <li>
+                        <img src="images/icons/icons8-mail-50.png" height="25px">
+                        example@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="flights.html">Flights</a></li>
+                    <li><a href="cruises.html">Cruises</a></li>
+                    <li><a href="carrental.html">Car Rentals</a></li>
+                    <li><a>Tours & Activities</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="bustours.html">Bus Tours</a></li>
+                            <li><a href="sightseeing.html">Sight Seeing</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="chinesevisa.html">Chinese Visa</a></li>
+                            <li><a href="nexusapp.html">NEXUS Application</a></li>
+                            <li class="hover-me">
+                                <a>Flight Departures</a>
+                                <div class="dropdown-menu-2">
+                                    <ul>
+                                        <li><a href="https://www.torontopearson.com/en/departures" target=”_blank”>Toronto Departures</a></li>
+                                        <li><a href="https://flyhamilton.ca/arrivals-departures/" target="_blank">Hamilton Departures</a></li>
+                                        <li><a href="https://www.yvr.ca/en/passengers/flights/departing-flights" target="_blank">Vancouver Departures</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Body of page-->
+        <div class="container">
+            <div class="page-title">
+                <p>Chinese Visa</p>
+            </div>
+            <div class="body-1">
+                <p class="body-1-p-1">Applying for a Chinese Visa is hard and confusing. <b>Let us help.</b></p>
+                <div class="contact-container">
+                    <div class="email-form">
+                        <form onsubmit="sendEmail(); reset(); return false;">
+                            <input type="email" id="email" placeholder="Email*" required>
+                            <button type="submit">Send</button>
+                        </form>
+                        <p>We will contact you as soon as possible, or email us at example@gmail.com</p>
+                    </div>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                    function sendEmail(){
+                        Email.send({
+                            Host : "smtp.elasticemail.com",
+                            Username : "dingrandy6@gmail.com",
+                            Password : "1AF35326161BA3B3D89F2539D568457711FA",
+                            To : "lucyzhao2017@gmail.com",
+                            From : document.getElementById("email").value,
+                            Subject : "CHINESE VISA",
+                            Body : "Email:" + document.getElementById("email").value
+                                    + "<br> Subject: CHINESE VISA, contact this email to book appt for chinese visa." 
+                        }).then(
+                        message => alert(message)
+                        );
+                    }
+                </script>
+                    <div class="or">
+                        <p>OR</p>
+                    </div>
+                    <div class="phone">
+                        <p>CALL US AT</p>
+                        <p><b>519-771-9318</b></p>
+                    </div>
+                </div>
+                <p class="body-1-p-2">To enter China, a Chinese visa is required by most foreign nationals. 
+                    At Bell Travel, we can help with the full application process.
+                    We recommend you submit your application at least 4 weeks before your estimated 
+                    arrival date to China. lorem ipsum...</p>
+            </div>
+            <div class="body-2">
+                <p>Visa Type</p>
+                <table>
+                    <tr>
+                        <th>Visa Category</th>
+                        <th>Applicant Type</th>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>Foreign crew members of means of international transportation, 
+                            including aircraft, trains and ships, or motor vehicle drivers 
+                            engaged in cross-border transport activities, or to the accompanying 
+                            family members of the crew members of the above-mentioned ships.</td>
+                    </tr>
+                    <tr>
+                        <td>D</td>
+                        <td>	
+                            Foreigners who intend to reside in China permanently.</td>   
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>Foreigners who intend to go to China for exchanges, visits, 
+                            study tours and other non-business activities.</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>Foreigners who intend to transit through China.</td>
+                    </tr>
+                    <tr>
+                        <td>J1</td>
+                        <td>Resident foreign journalists of foreign news organizations stationed in China.
+                             The intended duration of stay in China exceeds 180 days.</td>
+                    </tr>
+                    <tr>
+                        <td>J2</td>
+                        <td>Foreign journalists who intend to go to China for short-term news coverage. 
+                            The intended duration of stay in China is no more than 180 days.</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>Foreigners who intend to go to China as a tourist.</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>Foreigners who intend to go to China for commercial 
+                            and trade activities.</td>
+                    </tr>
+                    <tr>
+                        <td>Q1</td>
+                        <td>Foreigners who are family members* of Chinese citizens or of foreigners 
+                            with Chinese permanent residence and intend to go to China for family reunion, 
+                            or to those who intend to go to China for the purpose of foster care. The 
+                            intended duration of stay in China exceeds 180 days.</td>
+                    </tr>
+                    <tr>
+                        <td>Q2</td>
+                        <td>Foreigners who intend to visit their relatives who are Chinese citizens residing 
+                            in China or foreigners with permanent residence in China. The intended duration of 
+                            stay in China is no more than 180 days.</td>
+                    </tr>
+                    <tr>
+                        <td>R</td>
+                        <td>Foreigners who are high-level talents or whose skills are urgently needed in China.</td>
+                    </tr>
+                    <tr>
+                        <td>S1</td>
+                        <td>Foreigners who intend to go to China to visit the foreigners working or studying in 
+                            China to whom they are spouses, parents, sons or daughters under the age of 18 or 
+                            parents-in-law, or to those who intend to go to China for other private affairs. 
+                            The intended duration of stay in China exceeds 180 days.</td>
+                    </tr>
+                    <tr>
+                        <td>S2</td>
+                        <td>Foreigners who intend to visit their family members* who are foreigners working or 
+                            studying in China, or to those who intend to go to China for other private matters. 
+                            The intended duration of stay in China is no more than 180 days.</td>
+                    </tr>
+                    <tr>
+                        <td>X1</td>
+                        <td>Foreigners who intend to study in China for a period of more than 180 days.</td>
+                    </tr>
+                    <tr>
+                        <td>X2</td>
+                        <td>Foreigners who intend to study in China for a period of no more than 180 days.</td>
+                    </tr>
+                    <tr>
+                        <td>Z</td>
+                        <td>Foreigners who intend to work in China.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="body-3">
+                <div class="tourist-title">
+                    <p class="body-3-p-1">Tourist Visa - Required Documents</p>
+                    <img src="images/icons/icons8-passport-and-tickets-64.png">
+                </div>
+                <div class="tourist-content">
+                    <p>1. passport</p>
+                    <p>2. visa application form and photo</p>
+                    <p>3. Proof of Travel Arrangements</p>
+                    <p>4. other supporting documents</p>
+                </div>
+            </div>
+        </div>
+
+        <!--footer of page-->
+        <footer>
+            <div class="foot">
+                <p class="creater-name">Made by Randy Ding</p>
+                <p>copyright@ 2016 belltravelbrantford travel ltd.all rights reserved.career HST/GST#842618506RT0001    TICO#50020607 | 
+                <a href="https://www.tico.ca/about-tico/policies/privacy-policy.html#:~:text=TICO%20has%20the%20authority%20to,fulfill%20its%20consumer%20protection%20mandate." class="white">privacy policy</a> | terms & conditions</p>
+                <img class="tico-img"src="images/tico-logo-footer.png" height="40px"/>
+            </div>
+        </footer>
+    </body>
+
+
+
+</html>

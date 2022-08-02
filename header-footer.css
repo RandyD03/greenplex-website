@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* { 
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/*Header*/
+.banner {
+    max-width: 80%;
+    margin: auto;
+    height: 80px;
+}
+
+.banner ul li {
+    margin: 10px;
+    float: right;
+}
+
+.banner ul li img {
+    vertical-align: middle;
+}
+
+.logo{
+    float: left;
+    margin: 10px;
+}
+
+/*Navigation Bar*/
+.navigation-bar {
+    width: 100%;
+    text-align: center;
+    background-color: #063970;
+}
+
+/*Nav bar first menu*/
+.navigation-bar ul li {
+    display: inline-block;
+    font-size: 25px;
+    list-style-type: none;
+    padding-inline: 40px;
+    padding-block: 20px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.navigation-bar ul li a {
+    color: white;
+}
+
+.navigation-bar ul li:hover {
+    background-color: white;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navigation-bar ul li:hover a {
+    color: #063970;
+}
+
+/*nav bar second menu/dropdown*/
+.navigation-bar ul li ul {
+    display: none;
+}
+
+.navigation-bar ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: white;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: -20px;
+    border: 2px solid #063970;
+}
+
+.navigation-bar ul li:hover ul li {
+    display: block;
+    line-height: 90%;
+}
+
+.navigation-bar ul li:hover ul li a {
+    color: #063970;
+    font-size: 17px;
+    border-bottom: 2px solid #063970;
+}
+
+.navigation-bar ul li ul li:hover a {
+    color: white;
+}
+
+.navigation-bar ul li ul li:hover {
+    background-color: #063970;
+}
+
+.navigation-bar ul li ul li ul {
+    margin-top: 20px;
+}
+
+.dropdown-menu-2 {
+    display: none;
+}
+
+.hover-me:hover .dropdown-menu-2 {
+    display: block;
+    position: absolute;
+    margin-left: 153.328px;
+    margin-top: -106px;
+}
+
+.hover-me:hover .dropdown-menu-2 ul li {
+    padding-inline: 20px;
+    padding-block: 10px;
+}
+
+.hover-me:hover .dropdown-menu-2 ul li a {
+    color: #063970;
+    border-bottom: 2px solid #063970;
+}
+
+.hover-me .dropdown-menu-2 ul li:hover a {
+    color: white;
+}
+
+
+
+/* .dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu li, .dropdown-menu li a {
+    display: block;
+    font-size: 17px;
+    text-align: right;
+}
+
+.dropdown-menu li:hover ul li{
+    display: block;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.navigation-bar ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: #063970;
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 10px;
+    z-index: 100;
+} */
+
+/*      */
+/*Footer*/
+/*      */
+
+footer {
+    background-color: #063970;
+}
+
+.foot {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    max-width: 750px;
+}
+
+.foot p {
+    max-width: 650px;
+    float: left;
+    color: white;
+}
+
+.tico-img {
+    float: right;
+}
+
+.creater-name {
+    font-style: italic;
+    font-weight: 600;
+    padding: 25px 0px 25px;
+}
+
+/*Link styling*/
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+/*class for white font color*/
+.white {
+    color: white;
+}
+
+
+  
