@@ -6,14 +6,17 @@
 .container {
     display: inline-block;
     padding-block-end: 50px;
+    z-index: 1;
 }
 
 .slider {
     width: 100%;
     height: 100vh;
     overflow: hidden; 
+    margin-top: 71px;
 }
 .slides {
+
     width: 500%; 
     height: 100vh; 
     display: flex;
@@ -45,7 +48,7 @@
 }
 
 .manual-btn {
-    border: 1px solid #063970;
+    border: 1px solid #38761d;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -57,7 +60,7 @@
 }
 
 .manual-btn:hover{
-    background: #063970;
+    background: #38761d;
 }
 
 #radio1:checked ~ .first {
@@ -87,7 +90,7 @@
 }
 
 .navigation-auto div {
-    border: 1px solid #063970;
+    border: 1px solid #38761d;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;

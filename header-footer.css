@@ -8,42 +8,58 @@
 }
 
 /*Header*/
-.banner {
-    max-width: 80%;
+.header {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
     margin: auto;
-    height: 80px;
+    background-color: white;
+     
 }
 
-.banner ul li {
+.banner {
+    margin: auto auto auto 20px;
+}
+
+.socials {
+    margin-inline: 10px;
+}
+
+.socials ul li {
     margin: 10px;
     float: right;
 }
 
-.banner ul li img {
+.socials ul li img {
     vertical-align: middle;
-}
-
-.logo{
-    float: left;
-    margin: 10px;
 }
 
 /*Navigation Bar*/
 .navigation-bar {
-    width: 100%;
-    text-align: center;
-    background-color: #063970;
+    text-align: right;
+    background-color: #38761d;
 }
 
 /*Nav bar first menu*/
 .navigation-bar ul li {
     display: inline-block;
-    font-size: 25px;
+    font-size: 21px;
     list-style-type: none;
     padding-inline: 40px;
     padding-block: 20px;
-    position: relative;
     transition: 0.3s;
+}
+
+@media(max-width: 1200px){
+    .navigation-bar ul li{
+        padding-inline: 20px;
+        font-size: 18px;
+
+    }
 }
 
 .navigation-bar ul li a {
@@ -57,7 +73,7 @@
 }
 
 .navigation-bar ul li:hover a {
-    color: #063970;
+    color: #38761d;
 }
 
 /*nav bar second menu/dropdown*/
@@ -72,7 +88,7 @@
     text-align: left;
     margin-top: 20px;
     margin-left: -20px;
-    border: 2px solid #063970;
+    border: 2px solid #38761d;
 }
 
 .navigation-bar ul li:hover ul li {
@@ -81,9 +97,9 @@
 }
 
 .navigation-bar ul li:hover ul li a {
-    color: #063970;
+    color: #38761d;
     font-size: 17px;
-    border-bottom: 2px solid #063970;
+
 }
 
 .navigation-bar ul li ul li:hover a {
@@ -91,7 +107,7 @@
 }
 
 .navigation-bar ul li ul li:hover {
-    background-color: #063970;
+    background-color: #38761d;
 }
 
 .navigation-bar ul li ul li ul {
@@ -115,46 +131,17 @@
 }
 
 .hover-me:hover .dropdown-menu-2 ul li a {
-    color: #063970;
-    border-bottom: 2px solid #063970;
+    color: #38761d;
+    border-bottom: 2px solid #38761d;
 }
 
 .hover-me .dropdown-menu-2 ul li:hover a {
     color: white;
 }
 
-
-
-/* .dropdown-menu {
-    display: none;
-}
-
-.dropdown-menu li, .dropdown-menu li a {
-    display: block;
-    font-size: 17px;
-    text-align: right;
-}
-
-.dropdown-menu li:hover ul li{
-    display: block;
-    border-radius: 0px 0px 4px 4px;
-}
-
-.navigation-bar ul li:hover ul {
-    display: block;
-    position: absolute;
-    background-color: #063970;
-    border-radius: 0px 0px 4px 4px;
-    margin-top: 10px;
-    z-index: 100;
-} */
-
-/*      */
 /*Footer*/
-/*      */
-
 footer {
-    background-color: #063970;
+    background-color: #38761d;
 }
 
 .foot {
