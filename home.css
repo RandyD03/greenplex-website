@@ -1,195 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
 
 /*slider*/
-
 .container {
-    display: inline-block;
-    padding-block-end: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.slick-slider {
+    margin-top: 15px;
     z-index: 1;
-}
-
-.slider {
     width: 100%;
-    height: 100vh;
-    overflow: hidden; 
-    margin-top: 71px;
-}
-.slides {
-
-    width: 500%; 
-    height: 100vh; 
-    display: flex;
+    height: 90vh;
+    margin-bottom: 50px;
 }
 
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 20%;
-    transition: 1s
-}
-
-.slide img {
+.bg {
     width: 100%;
-    height: 100vh; 
+    height: 90vh;
     object-fit: cover;
-    object-position: center center;
-
+    object-position: 0px 60%;
 }
 
-.navigate-manual {
+.slide-1 p {
+    top: 45%;
+    margin-left: 100px;
     position: absolute;
+    font-weight: 600;
+    color: white;
+    font-size: 5.0em;
+    text-shadow: 1px 2px black;
+}
+
+.slide-2 {
+    background-color: #d9d9d9;
     width: 100%;
-    margin-top: -5vh;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 1px solid #38761d;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background: #38761d;
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -20%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -40%;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -60%;
-}
-
-
-
-.navigation-auto {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 95vh;
-}
-
-.navigation-auto div {
-    border: 1px solid #38761d;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-
-}
-
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #f1eeee;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #f1eeee;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #f1eeee;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #f1eeee;
-}
-
-/*Main Packages*/
-.main-packages-section {
-    margin: 5px;
-    padding: 70px;
-    text-align: center;
-}
-
-.main-packages {
-    text-align: center;
-    max-width: 1200px;
+    height: 90vh;
     margin: auto;
 }
 
-.grid {
-    max-width: 1400px;
-    margin: auto;
+.slide-2-p1 {
+    font-family: 'Cardo', serif;
+    font-size: 4.7em;
+    position: absolute;
+    top: 20%;
+    margin-left: 280px;
+    color: #69443c;
+    text-align: center;
+}
+
+.slide-2-p2 {
+
+}
+
+.slide-2-p3 {
+    background-color: white;
+
+}
+
+.slide-2 img {
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    margin-left: 800px;
+}
+
+
+
+
+/*body 2*/
+
+.body-2{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 1200px;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.main-packages img {
-    width: 100%;
-    border-radius: 1% 1% 0% 0%;
-    object-fit: cover;
+.body-2-image img {
+    width: 700px;
+    margin-bottom: -4px;
 }
 
-.title {
-    padding-bottom: 15px;
+.body-2-paragraph {
+    text-align: right;
+    margin: 50px;
+    font-size: 1.6em;
+    line-height: 150%;
 }
 
-.main-packages li p {
+.body-2-paragraph p {
+    margin-bottom: 20px;
+    font-size: 2.0em;
+}
+
+.body-2-paragraph p b {
+    color: #38761d;
+}
+
+
+/*body 3*/
+.body-3 {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: 100px auto;
+}
+
+.body-3 h2 {
+    margin: auto;
+    font-size: 2.0em;
+    border-bottom: 2px solid black;
+}
+
+.body-3-grid {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-1, .grid-2, .grid-3  {
+    position: relative;
     margin: 10px;
+    width: 350px;
+    height: 400px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
 }
 
-.main-packages li {
-    text-align: center;
-    margin: 20px;
-    border-style: solid;
-    border-radius: 1%;
-    border-width: 1px;
-    border-color: #063970;
-    width: 400px;
-    height: 600px;
+
+.grid-1 p, .grid-2 p, .grid-3 p {
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.3s;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 350px;
+    font-size: 1.5em;
+    padding: 10px 10px 10px 10px;
 }
 
-/*buttons*/
-button {
-    border-width: 1px;
-    border-color: #063970;
-    background-color: #063970;
-    font-weight: 800;
-    font-size: 15px;
-    padding: 5px 15px 5px 15px;
-    margin: 10px;
-    transition: 0.1s;
+.grid-1 a:hover p, .grid-2 a:hover p, .grid-3 a:hover p {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px 10px 50px 10px;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 0px;
+    width: 350px;
 }
 
-button a {
-    color: white;
-}
-
-button:hover {
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #063970;
-}
-
-button a:hover {
-    color: #063970;
-}
 
 /*flights*/
 .parallax-window {
@@ -258,11 +218,6 @@ button a:hover {
 }
 
 /*blog*/
-.blog-container {
-    max-width: 900px;
-    margin: 50px auto;
-    text-align: center;
-}
 
 .blog {
     overflow: hidden;
@@ -272,32 +227,15 @@ button a:hover {
     background-position: center center;
     margin: auto;
     text-align: left;
-    transition: 0.2s ease-in-out;
+    height: 200px;
 }
 
-.headline {
-    font-size: 4em;
-    margin-bottom: 20px;
+.blog p {
+    transition: 0.3s ease-in-out;
+    font-size: 3.4em;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.blog:hover {
-    /* transform: scale(1.02); */
-    font-size: 110%;
-}
-
-.blog ul li {
-    display: inline-block;
-    font-size: 1.6em;
-}
-
-.blog ul li img {
-    vertical-align: middle;
-}
-
-h1 {
-    font-size: 65px;
-}
-
-.pfp {
-    border-radius: 50%;
+.blog:hover p {
+    font-size: 3.5em;
 }

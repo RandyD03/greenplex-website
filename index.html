@@ -10,7 +10,6 @@
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="parallax.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     
@@ -26,34 +25,28 @@
                 </div>
                 <nav class="navigation-bar">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a>Products</a>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shopall.html">Shop All</a></li>
+                        <li><a>Product Lines</a>
                             <ul class="dropdown-menu">
-                                <li><a href="chinesevisa.html">Chinese Visa</a></li>
-                                <li><a href="nexusapp.html">NEXUS Application</a></li>
-                                <li class="hover-me">
-                                    <a>Flight Departures</a>
-                                    <div class="dropdown-menu-2">
-                                        <ul>
-                                            <li><a href="https://www.torontopearson.com/en/departures" target=”_blank”>Toronto Departures</a></li>
-                                            <li><a href="https://flyhamilton.ca/arrivals-departures/" target="_blank">Hamilton Departures</a></li>
-                                            <li><a href="https://www.yvr.ca/en/passengers/flights/departing-flights" target="_blank">Vancouver Departures</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <li><a href="radiantbright.html">Radiant Brightning Line</a></li>
+                                <li><a href="antiaging.html">Anti-Aging Line</a></li>
+                                <li><a href="bodycare.html">Body Care Line</a></li>
+                                <li><a href="mudmask.html">Mud Masks</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Private Labeling</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privatelabel.html">Private Labeling</a></li>
+                        <li><a>Community</a>
+                        <ul>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="socials">
-                    <ul>
-                        <li><img src="images/icons/icons8-twitter-50.png" height="25px"></li>
-                        <li><img src="images/icons/icons8-facebook-50.png" height="25px"></li>
-                        </li>
-                    </ul>
+                    
                 </div>
             </div>
         </header>
@@ -66,86 +59,69 @@
         <!--Body of page-->
         <!--............-->
         <div class="container">
-    
             <!--Slider-->
-            <div class="slider">
-                
-              
-
-                
-
-                <div class="slides">
-                    <!--Radio buttons-->
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-                    <!--slide images-->
-                    <div class="slide first">
-                        <img src="images/pictures from other sources for markting/girl-1545885_1920.jpg">
-                    </div>
-                    <div class="slide second">
-                        <img src="images/pictures from other sources for markting/Wobbler Sign1.jpg" alt="">
-                    </div>
-                    <div class="slide third">
-                        <img src="images/Tamarind Facial Toner .jpg" alt="">
-                    </div>
-                    <div class="slide fourth">
-                        <img src="images/stock-poster 4.jpg" alt="">
-                    </div>
-                    <!--auto navigate-->
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                    </div>
+            <div class="slick-slider">
+                <!--slide images-->
+                <div class="slide-1">
+                    <a href="#natural">
+                        <img src="images/pexels-karolina-grabowska-4041392.jpg" class="bg">
+                        <p>Up to 100% natural</p>
+                    </a>
                 </div>
-                <!--manual navigate-->
-                <div class="navigate-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
+                <div class="slide-2">
+                    <div class="slide-2 horiz-flexbox">
+                        <img src="images/product images/avocado facial cream without background edited.png">
+                    </div>
+                    <p class="slide-2-p1">Avocado <br>Facial Cream</p>
+                    <p class="slide-2-p2">NO PARABEN<br>VEGAN</p>
+                    <p class="slide-2-p3">With Hydrolic Acid</p>
+                </div>
+                <div>
+                    <img src="images/Tamarind Facial Toner .jpg" class="bg">
+                </div>
+                <div>
+                    <img src="images/private label service.png" class="bg">
                 </div>
             </div>
-            <script type="text/javascript">
-                var counter = 1;
-                setInterval(function(){
-                    document.getElementById('radio' + counter).checked = true;
-                    counter++;
-                    if(counter > 4){
-                        counter = 1;
-                    }
-                }, 6000);
-            </script>
-            <!--Main Packages-->
-            <div class="main-packages-section">
-                <h2 class="title">Main Packages</h2>
-                <p class="paragraph">Every week we offer you the best discounts and personalized packages.
-                <br>Trips include niagra falls to international destinations.
-                </p>
-                <ul class="grid main-packages">
-                    <li>
-                        <img src="images/stock-crowne-plaza-niagara-falls-3114408472-3x2.jpg" height="400px">
-                        <h3>Niagra Falls 3 day</h3>
-                        <p>This is a short description of the package. It should be this long. blah blah blah testing testing.</p>
-                        <button type="button"><a href="packages.html">VIEW MORE</a></button>
-                    </li>
-                    <li>
-                        <img src="images/stock-crowne-plaza-niagara-falls-3114408472-3x2.jpg" height="400px">
-                        <h3>Niagra Falls 3 day</h3>
-                        <p>This is a short description of the package. It should be this long. blah blah blah testing testing.</p>
-                        <button type="button"><a href="packages.html">VIEW MORE</a></button>
-                    </li>
-                    <li>
-                        <img src="images/stock-crowne-plaza-niagara-falls-3114408472-3x2.jpg" height="400px">
-                        <h3>Niagra Falls 3 day</h3>
-                        <p>This is a short description of the package. It should be this long. blah blah blah testing testing.</p>
-                        <button type="button" class="view-all"><a href="packages.html">VIEW MORE</a></button>
-                    </li>
-                </ul>
-                <button type="button"><a href="packages.html">VIEW ALL PACKAGES</a></button>
+            <div class="body-2" id="natural">
+                <div class="body-2-paragraph">
+                    <p> Up to <b>100% Natural</b></p>
+                    <ul>
+                        <li>No Animal Testing</li>
+                        <li>No Parabens</li>
+                        <li>No SLS</li>
+                        <li>Select Vegan Products</li>
+                        <li>Freshly Made In Canada From Small Batches</li>
+                    </ul>
+                </div>
+                <div class="body-2-image">
+                    <img src="images/greenplex-anti-aging-facial-serum_orig.jpg">
+                </div>
+            </div>
+            
+            <div class="body-3">
+                    <h2>SHOP PRODUCT LINES</h2>
+                <div class="body-3-grid">
+                    <div class="grid-1">
+                        <a href="radiantbright.html">
+                            <img src="images/product images/Radiant brightening line .JPG" height="400px" width="350px" style="object-fit: cover;">
+                            <p>Radiant Brightning</p>
+                        </a>
+                    </div>
+                    <div class="grid-2">
+                        <a href="antiaging.html">
+                            <img src="images/product images/anti aging line products .jpg" height="400px" width="350px" style="object-fit: cover;">
+                            <p>Anti-Aging</p>
+                        </a>
+                    </div>
+                    <div class="grid-3">
+                        <a href="bodycare.html">
+                            <img src="images/product images/body care line.jpg" height="400px" width="350px" style="object-fit: cover;">
+                            <p>Body-Care</p>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         <!--flights-->
             <div class="parallax-window" data-parallax="scroll" data-image-src="images\stock-toronto-pearson-international-airport-departures.jpg">
@@ -187,16 +163,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="blog-container">
-                <h2 class="title">Our Blog</h2>
+            <div class="body-6">     
                 <a href="blog.html">
                     <div class="blog">
-                        <p class="white headline">ENGLISH WEBSITE INAUGURATION</p>
+                        <section class="white">Blog Highlight</section>
                         <section class="white">7/20/2022</section>
-                        <ul>
-                            <li><img src="images/img_avatar2.png" alt="Avatar" class="pfp" height="40px"></li>
-                            <li class="white line">Bob Joe</li>
-                        </ul>
+                        <p class="white" >ENGLISH WEBSITE INAUGURATION</p>
                     </div>
                 </a>
             </div>
@@ -206,12 +178,46 @@
         <!--footer of page-->
         <footer>
             <div class="foot">
-                <p class="creater-name">Made by Randy Ding</p>
-                <p>copyright@ 2016 belltravelbrantford travel ltd.all rights reserved.career HST/GST#842618506RT0001    TICO#50020607 | 
-                <a href="https://www.tico.ca/about-tico/policies/privacy-policy.html#:~:text=TICO%20has%20the%20authority%20to,fulfill%20its%20consumer%20protection%20mandate." class="white">privacy policy</a> | terms & conditions</p>
-                <img class="tico-img"src="images/tico-logo-footer.png" height="40px"/>
+                <div class="footer-1">
+                    <a href="https://www.facebook.com/HondyTechnicalInc" target="_blank"><img src="images/icons/icons8-facebook-50.png" height="25px"></a>
+                    <a href="https://twitter.com/Greenplexca" target="_blank"><img src="images/icons/icons8-twitter-50.png" height="25px"></a>
+                    <p class="creater-name white">Made by Randy Ding</p>
+                </div>
+                <div class="footer-2">
+                    <p class="white" style="font-size: 1.3em; margin-bottom: 10px;">Menu</p>
+                    <ul>
+                        <li><a href="index.html" class="white">Home</a></li>
+                        <li><a href="shopall.html" class="white">Shop all</a></li>
+                        <li><a href="aboutus.html" class="white">About Us</a></li>
+                        <li><a href="blog.html" class="white">Blog</a></li>
+                        <li><a href="contact.html" class="white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-3">
+                    <p class="white" style="font-size: 1.3em;">NEWSLETTER</p>
+                    <p class="white" style="font-size: 0.9em; max-width: 300px;">Subscribe to our newsletter to recieve our latest deals, blogs and more</p>
+                    <form>
+                        <input type="email" id="email" placeholder="Email*" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
             </div>
         </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.slick-slider').slick({
+                    dots: true,
+                    arrows:true,
+                    autoplay:true,
+                    autoplaySpeed: 4000
+                });
+            });
+        </script>
     </body>
 
 

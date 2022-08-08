@@ -56,7 +56,6 @@
 .slick-next:focus:before
 {
     opacity: 1;
-    color: black;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -80,7 +79,8 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 0px;
+    z-index: 100;
 }
 [dir='rtl'] .slick-prev
 {
@@ -98,7 +98,8 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 0px;
+    z-index: 100;
 }
 [dir='rtl'] .slick-next
 {
