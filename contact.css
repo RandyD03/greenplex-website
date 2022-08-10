@@ -1,13 +1,26 @@
 .container {
     width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    padding-block: 50px;
+}
+
+.page-title {
+    font-size: 2em;
+    width: 1200px;
+    margin: 71px auto 10px;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+.page-title p {
+    color: #38761d;
 }
 
 .contact-form {
     width: 50%;
-    height: 90vh;
+    height: 70vh;
     background: white;
     display: flex;
     flex-basis: 60%;
@@ -15,7 +28,7 @@
     justify-content: center;
 }
 
-form {
+.contact-form form {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -23,12 +36,12 @@ form {
     width: 80%;
 }
 
-form h3 {
+.contact-form form h3 {
     font-weight: 800;
     margin-bottom: 20px;
 }
 
-form input, form textarea {
+.contact-form form input, .contact-form form textarea {
     border: 0;
     margin: 10px;
     padding: 20px;
@@ -37,7 +50,7 @@ form input, form textarea {
     font-size: 16px;
 }
 
-form button {
+.contact-form form button {
     padding: 15px;
     background: #063970;
     color: #fff;
@@ -56,25 +69,22 @@ form button {
     flex-direction: column;
     padding: 20px;
     width: 400px;
+    margin-bottom: auto;
+    margin-top: 82px;
+}
+
+.info section {
+    font-size: 1.5em;
+    line-height: 2;
+    color: #38761d;
 }
 
 .info ul li {
     font-size: 1.2em;
     line-height: 2;
-    font-weight: bold;
 }
 
 .info ul li img {
     vertical-align: middle;
-}
-
-table {
-    border-collapse: collapse;
-    font-size: 0.9em;
-    min-width: 400px;
-    margin-block: 20px;
-}
-
-table th {
-    text-align: left;
+    margin-right: 10px;
 }

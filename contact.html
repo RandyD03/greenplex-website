@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 
-<!--CONTACT PAGE OF BELL TRAVEL WEBSITE, Created by: Randy Ding-->
+<!--CONTACT PAGE OF GREENPLEX WEBSITE, Created by: Randy Ding-->
 <html>
     <head>
-        <title>Bell Travel</title>
+        <title>Greenplex Skincare</title>
+        <link rel="icon" href="images/GP logo mini.png">
         <link rel="stylesheet" href="header-footer.css"/>
         <link rel="stylesheet" href="contact.css"/>
 
@@ -13,68 +14,44 @@
     <body>
         <!--header of page-->
         <header>
-            <div class="banner">
-                <li class="logo"><a href="index.html"><img src="images/logo - new.png" height="50"></a></li>
-                <ul>
-                    <li>
-                        <img src="images/icons/icons8-phone-50.png" height="25px">
-                        519-771-9318
-                    </li>
-                    <li>
-                        <img src="images/icons/icons8-location-50.png" height="25px">
-                        388 St Paul Ave, Brantford, ON
-                    </li>
-                    <li>
-                        <img src="images/icons/icons8-mail-50.png" height="25px">
-                        example@gmail.com
-                    </li>
-                </ul>
-            </div>
-            <nav class="navigation-bar">
-                <ul>
-                    <li><a href="packages.html">Packages</a></li>
-                    <li><a href="flights.html">Flights</a></li>
-                    <li><a href="cruises.html">Cruises</a></li>
-                    <li><a href="carrental.html">Car Rentals</a></li>
-                    <li><a>Tours & Activities</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="bustours.html">Bus Tours</a></li>
-                            <li><a href="sightseeing.html">Sight Seeing</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="chinesevisa.html">Chinese Visa</a></li>
-                            <li><a href="nexusapp.html">NEXUS Application</a></li>
-                            <li class="hover-me">
-                                <a>Flight Departures</a>
-                                <div class="dropdown-menu-2">
-                                    <ul>
-                                        <li><a href="https://www.torontopearson.com/en/departures" target=”_blank”>Toronto Departures</a></li>
-                                        <li><a href="https://flyhamilton.ca/arrivals-departures/" target="_blank">Hamilton Departures</a></li>
-                                        <li><a href="https://www.yvr.ca/en/passengers/flights/departing-flights" target="_blank">Vancouver Departures</a></li>
-                                    </ul>
-                                </div>
+            <header>
+                <div class="header">
+                    <div  class="banner">
+                        <li class="logo"><a href="index.html"><img src="images/GP logo-green .png" height="50"></a></li>
+                    </div>
+                    <nav class="navigation-bar">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shopall.html">Shop All</a></li>
+                            <li><a>Collections</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="radiantbright.html">Brightning collection</a></li>
+                                    <li><a href="antiaging.html">Anti-Aging Collection</a></li>
+                                    <li><a href="bodycare.html">Body-Care Collection</a></li>
+                                    <li><a href="mudmask.html">Mud Masks</a></li>
+                                </ul>
                             </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+                    </nav>
+                    <div class="socials">
+                    </div>
+                </div>
+            </header>
 
         <!--Body of page-->
-
+            <div class="page-title">
+                <p>Contact Us</p>
+            </div>
         <!--Contact form-->
         <div class="container">
             <div class="contact-form">
                 <form onsubmit="sendEmail(); reset(); return false;">
-                    <h3>CONTACT US</h3>
-                    <input type="text" id="first-name" placeholder="First Name*" required>
-                    <input type="text" id="last-name" placeholder="Last Name*" required>
+                    <input type="text" id="name" placeholder="Name*" required>
                     <input type="email" id="email" placeholder="Email*" required>
                     <input type="text" id="subject" placeholder="Subject">
-                    <textarea id="message" rows="4" placeholder="Message*" required></textarea>
+                    <textarea id="message" rows="5" placeholder="Message*" required></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>
@@ -85,10 +62,10 @@
                         Host : "smtp.elasticemail.com",
                         Username : "dingrandy6@gmail.com",
                         Password : "1AF35326161BA3B3D89F2539D568457711FA",
-                        To : "lucyzhao2017@gmail.com",
+                        To : "greenplexskincare@gmail.com",
                         From : document.getElementById("email").value,
                         Subject : document.getElementById("subject").value,
-                        Body : "Name:" + document.getElementById("first-name").value + " " + document.getElementById("last-name").value
+                        Body : "Name:" + document.getElementById("name").value 
                                 + "<br> Email:" + document.getElementById("email").value
                                 + "<br> Subject:" + document.getElementById("subject").value
                                 + "<br> Message:" + document.getElementById("message").value
@@ -100,54 +77,16 @@
 
         <!--Contact info-->
             <div class="info">
+                <section>Get In Touch</section>
                 <ul>
-                    <li>
-                        <img src="images/icons/icons8-phone-50.png" height="30px">
-                        519-771-9318
-                    </li>
-                    <li>
-                        <img src="images/icons/icons8-mail-50.png" height="30px">
-                        contact@belltravel.store
-                    </li>
-                    <li>
-                        <img src="images/icons/icons8-location-50.png" height="30px">
-                        388 St Paul Ave, Brantford, ON N3R 4N4
-                    </li>
+                    <li><img src="images/icons/icons8-phone-50.png" height="25px">416-800-5681</li>
+                    <li><img src="images/icons/icons8-mail-50.png" height="25px">greenplexskincare@gmail.com</li>
                 </ul>
-                <p class="google-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.490444762234!2d-80.27660207102493!3d43.157228364207754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c660f73606007%3A0xd6ebd6b1424abe9f!2sBell%20Travel%20Inc.!5e0!3m2!1sen!2sca!4v1658724050705!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-                <table>
-                    <tr>
-                        <th>HOURS:</th>
-                    </tr>
-                    <tr>
-                        <td >Monday</td>
-                        <td>Closed</td>
-                    </tr>
-                    <tr>
-                        <td>Tuesday</td>
-                        <td>10:00AM - 3:00PM</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>10:00AM - 3:00PM</td>
-                    </tr>
-                    <tr>
-                        <td>Thursday</td>
-                        <td>10:00AM - 3:00PM</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>Closed</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday</td>
-                        <td>10:00AM - 3:00PM</td>
-                    </tr>
-                    <tr>
-                        <td>Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </table>
+                <section>Connect With Us</section>
+                <ul >
+                    <li style="display: inline-block;"><a href="https://www.facebook.com/HondyTechnicalInc"><img src="images/icons/icons8-facebook-50.png" height="25px"></a></li>
+                    <li style="display: inline-block;"><a href="https://twitter.com/Greenplexca"><img src="images/icons/icons8-twitter-50.png" height="25px"></a></li>
+                </ul>
             </div>
         </div>
 
@@ -156,11 +95,31 @@
         <!--footer of page-->
         <footer>
             <div class="foot">
-                <p class="creater-name">Made by Randy Ding</p>
-                <p>copyright@ 2016 belltravelbrantford travel ltd.all rights reserved.career HST/GST#842618506RT0001    TICO#50020607 |
-                <span class="lan"><a href="https://www.tico.ca/about-tico/policies/privacy-policy.html#:~:text=TICO%20has%20the%20authority%20to,fulfill%20its%20consumer%20protection%20mandate.">privacy policy</a></span> | <span class="lan">terms & conditions</span></p>
-                <img class="tico-img"src="images/tico.jpg" />
-             </div>
+                <div class="footer-1">
+                    <a href="https://www.facebook.com/HondyTechnicalInc" target="_blank"><img src="images/icons/icons8-facebook-50.png" height="25px"></a>
+                    <a href="https://twitter.com/Greenplexca" target="_blank"><img src="images/icons/icons8-twitter-50.png" height="25px"></a>
+                    <p class="creater-name white">Made by Randy Ding</p>
+                </div>
+                <div class="footer-2">
+                    <p class="white" style="font-size: 1.3em; margin-bottom: 10px;">Menu</p>
+                    <ul>
+                        <li><a href="index.html" class="white">Home</a></li>
+                        <li><a href="shopall.html" class="white">Shop all</a></li>
+                        <li><a href="aboutus.html" class="white">About Us</a></li>
+                        <li><a href="blog.html" class="white">Blog</a></li>
+                        <li><a href=privatelabel.html" class="white">Private Labelling</a></li>
+                        <li><a href="contact.html" class="white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-3">
+                    <p class="white" style="font-size: 1.3em;">NEWSLETTER</p>
+                    <p class="white" style="font-size: 0.9em; max-width: 300px;">Subscribe to our newsletter to recieve our latest deals, blogs and more</p>
+                    <form>
+                        <input type="email" id="email" placeholder="Email*" required>
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
         </footer>
     </body>
 
