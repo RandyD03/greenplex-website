@@ -1,0 +1,74 @@
+.container {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.page-title {
+    margin: 65px 0px 100px;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(rgba(66, 36, 11, 0.1),rgba(0,0,0,0.1)), url("images/pexels-badulescu-badulescu-2171077.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.page-title p {
+    font-size: 8.0em;
+    color: white;
+    line-height: 500px;
+
+}
+
+.body-1 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1em;
+    margin: auto;
+}
+
+@media (max-width: 1300px) {
+    .body-1 {
+        grid-template-columns: 50% 50%;
+    }
+
+    .body-1 section {
+        padding-inline: 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .body-1 {
+        grid-template-columns: 100%;
+    }
+
+    .body-1 section {
+        padding-inline: 0px;
+    }
+}
+.body-1 div {
+    margin: 20px;
+    height: 600px;
+}
+
+.body-1 img {
+    width: 100%;
+    object-fit: contain;
+    margin-inline: auto;
+}
+
+.body-1 p {
+    font-weight: 600;
+    color: #38761d;
+    text-align: center;
+}
+
+.body-1 section {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    padding-inline: 60px;
+}
