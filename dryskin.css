@@ -31,8 +31,9 @@
 .body-1 {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: flex-start;
 }
+
 .products {
     width: 100%;
     display: grid;

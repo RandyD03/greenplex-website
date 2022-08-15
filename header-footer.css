@@ -210,7 +210,7 @@ a:active { text-decoration: none; }
 }
 
 /*buttons*/
-button {
+form button {
     border-width: 1px;
     border-color: #063970;
     background-color: #063970;
@@ -222,11 +222,11 @@ button {
     color: white;
 }
 
-button a {
+form button a {
     color: white;
 }
 
-button:hover {
+form button:hover {
     background-color: white;
     border-style: solid;
     border-width: 1px;
