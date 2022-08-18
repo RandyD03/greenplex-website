@@ -78,11 +78,11 @@
 
 .body-3-grid {
     margin: 40px auto;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-.grid-1, .grid-2, .grid-3  {
+.grid-1, .grid-2, .grid-3, .grid-4  {
     position: relative;
     margin: 10px;
     width: 350px;
@@ -92,24 +92,24 @@
 }
 
 
-.grid-1 p, .grid-2 p, .grid-3 p {
+.grid-1 p, .grid-2 p, .grid-3 p, .grid-4 p {
     background-color: rgba(255, 255, 255, 0);
     transition: 0.3s;
     position: absolute;
     bottom: 0px;
     background-color: rgba(255, 255, 255, 0.7);
-    width: 350px;
+    width: 330px;
     font-size: 1.5em;
     padding: 10px 10px 10px 10px;
 }
 
-.grid-1 a:hover p, .grid-2 a:hover p, .grid-3 a:hover p {
+.grid-1 a:hover p, .grid-2 a:hover p, .grid-3 a:hover p, .grid-4 a:hover p {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 50px 10px 50px 10px;
     font-size: 1.5em;
     position: absolute;
     bottom: 0px;
-    width: 350px;
+    width: 330px;
 }
 
 
