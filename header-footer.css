@@ -42,7 +42,6 @@ html {
     background-color: #38761d;
 }
 
-/*Nav bar first menu*/
 .navigation-bar ul li {
     display: inline-block;
     font-size: 21px;
@@ -74,7 +73,6 @@ html {
     color: #38761d;
 }
 
-/*nav bar second menu/dropdown*/
 .navigation-bar ul li ul {
     display: none;
 }
@@ -135,6 +133,57 @@ html {
 
 .hover-me .dropdown-menu-2 ul li:hover a {
     color: white;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke;
+}
+
+@media(max-width:768px){
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar{
+        opacity: 0;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        left: 100%;
+        top: 54px;
+        background-color: #38761d;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu li {
+        margin: 16px 0px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0%;
+        top: 54px;
+        background-color: #38761d;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /*Footer*/
