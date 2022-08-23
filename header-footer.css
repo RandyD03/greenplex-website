@@ -138,6 +138,7 @@ html {
 .hamburger {
     display: none;
     cursor: pointer;
+    margin-top: 18px;
 }
 
 .bar {
@@ -147,16 +148,20 @@ html {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: whitesmoke;
+    background-color: #38761d;
 }
 
 @media(max-width:768px){
+
+    .navigation-bar {
+        background-color: white;
+    }
     .hamburger {
         display: block;
     }
 
     .hamburger.active .bar{
-        opacity: 0;
+        opacity: 0.3;
     }
 
     .nav-menu {

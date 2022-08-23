@@ -1,0 +1,51 @@
+.container {
+    width: 1200px;
+    margin: 71px auto;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    z-index: 100;
+}
+
+
+.blog-navigator {
+    display: block;
+    height: 20px;
+}
+
+.btn-prev {
+    float: left;
+    color: #63666A;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-next {
+    float: right;
+    color: #63666A;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-prev::after, .btn-next::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #63666A;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-prev:hover::after, .btn-next:hover::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: #63666A;
+    display: block;
+}
