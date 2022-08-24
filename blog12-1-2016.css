@@ -1,18 +1,24 @@
-.container {
-    width: 1200px;
-    margin: 71px auto;
-}
-
 .parallax-window {
     min-height: 400px;
     background: transparent;
     z-index: 100;
 }
 
+.container {
+    width: 900px;
+    margin: -100px auto 50px;
+    background-color: white;
+    padding: 50px 100px ;
+}
+
 
 .blog-navigator {
+    width: 900px;
     display: block;
-    height: 20px;
+    height: 30px;
+    margin: 20px auto;
+    background-color: white;
+    padding-top: 10px;
 }
 
 .btn-prev {
@@ -49,3 +55,38 @@
     background-color: #63666A;
     display: block;
 }
+
+.date {
+    color: #63666A;
+    margin: 30px 0px 30px 0px;
+}
+
+.headline {
+    font-size: 2em;
+    color: #38761d;
+    margin: 30px 0px 30px 0px;
+}
+
+.blog-paragraph p {
+    margin: 30px 0px 30px 0px;
+    font-size: 0.9em;
+    line-height: 2em;
+}
+
+.blog-paragraph div {
+    display: flex;
+    flex-direction: row;
+}
+
+.blog-paragraph div p {
+    margin: 0px 30px 0px 0px;
+}
+
+.sticky {
+    position: fixed;
+    top: 45px;
+  }
+
+  .sticky + .blog-content {
+    padding-top: 70px;
+  }
