@@ -1,3 +1,4 @@
+//sticky navbar on blogs
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myBlogNav");

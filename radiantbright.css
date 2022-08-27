@@ -1,7 +1,7 @@
 .container {
-    margin: 0px;
+    margin: 0px 0px 100px;
     padding: 0px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .page-title {
@@ -17,7 +17,7 @@
 
 .page-title p {
     font-size: 3.0em;
-    color: #38761d;
+    color: #006600;
     line-height: 100px;
 }
 
@@ -54,9 +54,10 @@
 }
 
 .products p {
-    font-weight: 600;
-    color: #38761d;
+    color: #006600;
     text-align: center;
+    font-size: 1.2em;
+    line-height: 3em;
 }
 
 .products section {
@@ -64,12 +65,15 @@
     margin-bottom: 30px;
     font-size: 0.8em;
     padding-inline: 60px;
+    line-height: 2em;
+    max-width: 400px;
+    margin: auto;
 }
 
 .descr {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    max-width: 600px;
     margin: auto;
     padding: 50px;
 }
@@ -87,7 +91,7 @@
 }
 
 .descr section {
-    color: #38761d;
+    color: #006600;
     text-align: center;
     font-size: 1.4em;
 }

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto 100px;
+}
+
+.body-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.picture {
+text-align: center;
+}
+
+.left img {
+    margin: 50px auto;
+}
+
+.underline-2 {
+    display: block;
+    background-color: #006600;
+    width: 500px;
+    height: 1px;
+    margin: 20px 0px;
+}
+
+.details {
+    margin: 0px 10px 0px 10px;
+    color: #006600;
+    font-weight: 600;
+}
+
+.plus-horz {
+    float: right;
+    height: 2px;
+    width: 16px;
+    display: block;
+    background-color: #63666A;
+    margin: 7px 0px 0px -9px;
+    transition: all 0.3s ease-in-out;
+}
+
+.plus-vert {
+    float: right;
+    height: 16px;
+    width: 2px;
+    display: block;
+    background-color: #63666A;
+    transition: all 0.3s ease-in-out;
+}
+
+.read-more {
+    max-width: 480px;
+    cursor: pointer;
+}
+
+.read-more.active .colapse {
+    display: block;
+}
+
+.read-more.active .plus-horz, .read-more.active .plus-vert{
+    opacity: 0.3;
+}
+
+.colapse {
+    font-size: 0.8em;
+    margin: 30px 10px 0px 10px;
+    display: none;
+}
+
+.product {
+    color: #006600;
+    font-size: 1.5em;
+    margin: 80px 0px 0px 0px;
+}
+
+.cost {
+    font-family: 'Comfortaa', cursive;
+    margin: 15px 0px;
+    color: #63666A;
+}
+
+.underline {
+    display: block;
+    background-color: #006600;
+    width: 600px;
+    height: 1px;
+    margin: 30px 0px;
+}
+
+.prod-description {
+    margin: 25px 0px;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    max-width: 600px;
+}
+
+.buy {
+    border: 1px solid #006600;
+    height: 50px;
+    width: 600px;
+    background-color: #006600;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 50px 0px;
+    transition: 0.3s;
+}
+
+.buy a {
+    color: white;
+}
+
+.buy:hover {
+    background-color: white;
+}
+
+.buy:hover a {
+    color: #006600;
+}
+
+.buy img {
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.body-2-title {
+    text-align: center;
+    color: #006600;
+    font-size: 1.8em;
+    padding: 20px;
+    margin: 80px 20px 80px;
+}
+.others-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 1em;
+    margin: auto;
+}
+
+@media (max-width: 1300px) {
+    .others-grid {
+        grid-template-columns: 100%;
+    }
+}
+
+.others-grid img {
+    width: 100%;
+    object-fit: contain;
+    margin-inline: auto;
+}
+
+.others-grid p {
+    color: #006600;
+    text-align: center;
+    line-height: 3em;
+    font-size: 1.2em;
+}
+
+.others-grid section {
+    text-align: center;
+    margin: 0px auto 30px;
+    font-size: 0.8em;
+    padding-inline: 60px;
+    line-height: 2em;
+    max-width: 400px;
+}
+
+@media (max-width: 1200px){
+    .body-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left, .right {
+        margin: auto;
+        width: 600px;
+    }
+
+    .underline-2 {
+        width: 600px;
+    }
+
+    .read-more {
+        max-width: 580px;
+    }
+}

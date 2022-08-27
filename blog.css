@@ -1,5 +1,5 @@
 .container {
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -11,11 +11,11 @@
     text-align: center;
     margin: 50px auto;
     padding: 40px;
-    border-bottom: 1px solid #38761d;
+    border-bottom: 1px solid #006600;
 }
 
 .page-title p {
-    color: #38761d;
+    color: #006600;
     font-size: 1.6em;
 }
 
@@ -35,11 +35,11 @@
 
 .text {
     margin-block: 20px;
-    width: 380px;
+    max-width: 380px;
 }
 
 .text section {
-    color: #38761d;
+    color: #006600;
     font-size: 1.4em;
 }
 

@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
 }
 
 html {
@@ -23,6 +24,7 @@ html {
     top: 0;
     z-index: 999;
     width: 100%;
+    min-height: 61px;
     margin: auto;
     background-color: white;
      
@@ -39,7 +41,7 @@ html {
 /*Navigation Bar*/
 .navigation-bar {
     text-align: right;
-    background-color: #38761d;
+    background-color: #006600;
 }
 
 .navigation-bar ul li {
@@ -66,11 +68,14 @@ html {
 .navigation-bar ul li:hover {
     background-color: white;
     display: inline-block;
-    list-style-type: none;
+}
+
+.nav-menu li a {
+    cursor: pointer;
 }
 
 .navigation-bar ul li:hover a {
-    color: #38761d;
+    color: #006600;
 }
 
 .navigation-bar ul li ul {
@@ -84,7 +89,7 @@ html {
     text-align: left;
     margin-top: 20px;
     margin-left: -20px;
-    border: 1px solid #38761d;
+    border: 1px solid #006600;
 }
 
 .navigation-bar ul li:hover ul li {
@@ -93,7 +98,7 @@ html {
 }
 
 .navigation-bar ul li:hover ul li a {
-    color: #38761d;
+    color: #006600;
     font-size: 17px;
 
 }
@@ -103,36 +108,11 @@ html {
 }
 
 .navigation-bar ul li ul li:hover {
-    background-color: #38761d;
+    background-color: #006600;
 }
 
 .navigation-bar ul li ul li ul {
     margin-top: 20px;
-}
-
-.dropdown-menu-2 {
-    display: none;
-}
-
-.hover-me:hover .dropdown-menu-2 {
-    display: block;
-    position: absolute;
-    margin-left: 153.328px;
-    margin-top: -106px;
-}
-
-.hover-me:hover .dropdown-menu-2 ul li {
-    padding-inline: 20px;
-    padding-block: 10px;
-}
-
-.hover-me:hover .dropdown-menu-2 ul li a {
-    color: #38761d;
-    border-bottom: 1px solid #38761d;
-}
-
-.hover-me .dropdown-menu-2 ul li:hover a {
-    color: white;
 }
 
 .hamburger {
@@ -148,7 +128,7 @@ html {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #38761d;
+    background-color: #006600;
 }
 
 @media(max-width:768px){
@@ -169,10 +149,10 @@ html {
         position: fixed;
         left: 100%;
         top: 54px;
-        background-color: #38761d;
+        background-color: #006600;
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: all 0.3s ease-in-out;
     }
 
     .nav-menu li {
@@ -185,15 +165,24 @@ html {
         position: fixed;
         left: 0%;
         top: 54px;
-        background-color: #38761d;
+        background-color: #006600;
         width: 100%;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        left: 50%;
+        width: 52.4%;
+    }
+
+    .dropdown-menu li {
         text-align: center;
     }
 }
 
 /*Footer*/
 footer {
-    background-color: #38761d;
+    background-color: #006600;
 }
 
 .foot {
@@ -241,15 +230,14 @@ form button {
     background: #063970;
     color: #fff;
     font-size: 16px;
-    border: 0;
+    border: 1px solid #063970;
     outline: none;
     cursor: pointer;
 }
 
 .creater-name {
-    font-style: italic;
-    font-weight: 600;
     padding: 20px 0px 20px;
+    font-size: 0.9em;
 }
 
 /*Link styling*/
@@ -274,6 +262,7 @@ form button {
     margin: 10px;
     transition: 0.1s;
     color: white;
+    transition: 0.3s;
 }
 
 form button a {

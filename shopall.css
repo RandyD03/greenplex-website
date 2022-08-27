@@ -1,7 +1,7 @@
 .container {
-    margin: 0px;
+    margin: 0px 0px 100px;
     padding: 0px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .page-title {
@@ -17,7 +17,7 @@
 
 .page-title p {
     font-size: 3.0em;
-    color: #38761d;
+    color: #006600;
     line-height: 100px;
 }
 
@@ -67,14 +67,17 @@
 }
 
 .body-1 p {
-    font-weight: 600;
-    color: #38761d;
+    color: #006600;
     text-align: center;
+    line-height: 3em;
+    font-size: 1.2em;
 }
 
 .body-1 section {
     text-align: center;
-    margin-bottom: 30px;
     font-size: 0.8em;
     padding-inline: 60px;
+    line-height: 2em;
+    max-width: 400px;
+    margin: 0px auto 30px;
 }

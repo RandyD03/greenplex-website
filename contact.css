@@ -1,13 +1,24 @@
 .container {
-    width: 100%;
+    max-width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 1000px){
+    .container {
+        flex-direction: column;
+    }
+
+    .info {
+        text-align: center;
+    }
 }
 
 .page-title {
     font-size: 2em;
-    width: 1200px;
+    max-width: 1200px;
     margin: 71px auto 10px;
     padding: 40px;
     text-align: center;
@@ -15,17 +26,14 @@
 }
 
 .page-title p {
-    color: #38761d;
+    color: #006600;
 }
 
 .contact-form {
-    width: 50%;
     height: 70vh;
     background: white;
-    display: flex;
     flex-basis: 60%;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
 }
 
 .contact-form form {
@@ -65,18 +73,16 @@
 
 .info {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     padding: 20px;
     width: 400px;
-    margin-bottom: auto;
-    margin-top: 82px;
+    margin: 0px auto;
 }
 
 .info section {
     font-size: 1.5em;
     line-height: 2;
-    color: #38761d;
+    color: #006600;
 }
 
 .info ul li {
