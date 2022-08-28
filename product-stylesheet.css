@@ -188,3 +188,14 @@ text-align: center;
         max-width: 580px;
     }
 }
+
+
+.out-of-stock {
+    width: 600px;
+    height: 48px;
+    text-align: center;
+    background-color: #63666A;
+    color: white;
+    display: block;
+    line-height: 48px;
+}
