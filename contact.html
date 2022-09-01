@@ -115,19 +115,35 @@
                         <li><a href="contact.html" class="white">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="footer-3">
+                <section id="newsletter">
                     <p class="white" style="font-size: 1.3em;">NEWSLETTER</p>
-                    <p class="white" style="font-size: 0.9em; max-width: 300px;">Subscribe to our newsletter to recieve our latest deals, blogs and more</p>
-                    <form>
-                        <input type="email" id="email" placeholder="Email*" required>
-                        <button type="submit">SUBSCRIBE</button>
+                    <p class="white" id="change" style="font-size: 0.9em; max-width: 300px;">Subscribe to our newsletter to recieve our latest deals, blogs and more</p>
+                    <form 
+                        action="https://gmail.us11.list-manage.com/subscribe/post?u=197f6f85bab08957daffa55fc&amp;id=9644c6e2d7&amp;f_id=006780e0f0" 
+                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div class="email-form">
+                            <input type="email" value="" name="EMAIL" class="tbox" id="mce-EMAIL" placeholder="Email">
+                            <button type="submit" name="subscribe" class="btn" id="mc-embedded-subscribe">Subscribe</button>
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
                     </form>
-                </div>
+                </section>
             </div>
         </footer>
 
 
-        <script src="hamburgerMenu.js"></script>
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';
+            ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';
+            ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));
+            var $mcj = jQuery.noConflict(true);
+        </script>
+        <script src="js/newsletter.js"></script>
+        <script src="js/hamburgerMenu.js"></script>
     </body>
 
 
