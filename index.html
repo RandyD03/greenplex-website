@@ -3,14 +3,24 @@
 <!--HOME PAGE OF GREENPLEX WEBSITE, Created by: Randy Ding-->
 <html lang="en" dir="ltr">
     <head>
-        <title>Greenplex Skincare</title>
+        <title>Greenplex Skincare | Home </title>
+        <meta name="description" content="Up to 100% Natural Greenplex Skin Care products 
+        are cruelty free, vegan and contains no paraben. Dry skin, aging skin, acne skin and dark spots?  
+        We have a solution that works for you with all natural ingredients. Look natural, live natural 
+        with Greenplex Skin Care!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="keywords" content="moisturizer, dry skin, natural skin care, natural skincare, organic 
+        skin care, organic skincare,  anti-aging skin care, facial serum, vitamin C facial serum, facial mask, 
+        hyaluronic acid">
+        <meta name="author" content="Randy Ding">
         <link rel="icon" href="images/GP logo mini.png">
         <link rel="stylesheet" href="header-footer.css"/>
         <link rel="stylesheet" href="home.css"/>
-        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    
+
+
     </head>
     
 
@@ -96,9 +106,7 @@
                         <li>Freshly Made In Canada From Small Batches</li>
                     </ul>
                 </div>
-                <div class="body-2-image">
-                    <img src="images/greenplex-anti-aging-facial-serum_orig.jpg">
-                </div>
+                <img src="images/greenplex-anti-aging-facial-serum_orig.jpg">
             </div>
             <!--body 3-->
             <div class="body-3">
@@ -106,25 +114,25 @@
                 <div class="body-3-grid">
                     <div class="grid-1">
                         <a href="radiantbright.html">
-                            <img src="images/product images/Radiant brightening line .JPG" height="600px" width="600px" style="object-fit: cover;">
+                            <img src="images/product images/Radiant brightening line .JPG" >
                             <p>Brightening Collection</p>
                         </a>
                     </div>
                     <div class="grid-2">
                         <a href="antiaging.html">
-                            <img src="images/product images/anti aging line products .jpg" height="600px" width="600px" style="object-fit: cover;">
+                            <img src="images/product images/anti aging line products .jpg"  >
                             <p>Anti-Aging Collection</p>
                         </a>
                     </div>
                     <div class="grid-3">
                         <a href="acne.html">
-                            <img src="images/product images/body care line.jpg" height="600px" width="600px" style="object-fit: cover;">
+                            <img src="images/product images/body care line.jpg"  >
                             <p>Acne Skin Collection</p>
                         </a>
                     </div>
                     <div class="grid-4">
                         <a href="dryskin.html">
-                            <img src="images/product images/body care line.jpg" height="600px" width="600px" style="object-fit: cover;">
+                            <img src="images/product images/body care line.jpg"  >
                             <p>Dry Skin Collection</p>
                         </a>
                     </div>
@@ -145,8 +153,8 @@
         <!--body 5-->
             <div class="body-5">
                 <section>
-                    <p style="font-size: 1.5em;">Plus natural organic fruits and plants:</p>
-                    <p>Avocado, shea butter, jojoba oil  tamarind, oatmeal, rosehip, chamomile, sweet almond, mango, grapefruit, cucumber, lavender, orange, rose, lime and aloe.</p>
+                    <p style="font-size: 2em; color: #006600;">Plus natural organic fruits and plants:</p>
+                    <p style="font-size: 1.2em; text-align: justify;">Avocado, shea butter, jojoba oil  tamarind, oatmeal, rosehip, chamomile, sweet almond, mango, grapefruit, cucumber, lavender, orange, rose, lime and aloe.</p>
                 </section>
                 <img src="images/ingredients.jpg" height="330px">
             </div>
@@ -272,14 +280,22 @@
                     centerMode: true,
                     centerPadding: '60px',
                     slidesToShow: 3,
-                    responsive: [
+                    responsive: [                        {
+                        breakpoint: 1350,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 2
+                        }
+                        },
                         {
                         breakpoint: 768,
                         settings: {
                             arrows: false,
                             centerMode: true,
                             centerPadding: '40px',
-                            slidesToShow: 3
+                            slidesToShow: 1
                         }
                         },
                         {

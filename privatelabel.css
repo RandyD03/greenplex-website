@@ -39,18 +39,23 @@
     font-size: 1.2em;
 }
 
-section {
+.body-1 img {
+    width: 100%;
+    height: auto;
+}
+
+.body-2 section {
     font-size: 1.3em;
     color: #006600;
     text-align: center;
 }
 
 
-section a {
+.body-2 section a {
     color: #7c7c7c;
 }
 
-section a:hover {
+.body-2 section a:hover {
     color: black;
 }
 
@@ -95,10 +100,18 @@ section a:hover {
 
 .flex-1 img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+    width: 100%;
 }
 
 .flex-1 p {
     font-size: 1em;
     padding-top: 50px;
     text-align: left;
+}
+
+@media (max-width: 1350px) {
+    .body-1 {
+        flex-direction: column !important;
+    }
 }
