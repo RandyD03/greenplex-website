@@ -191,26 +191,19 @@ footer {
     margin: auto;
     max-width: 100%;
     position: relative;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .footer-1 {
     height: 100%;
-    margin: 40px;
+    margin: 40px 0px 0px 40px;
 }
 
 .footer-2 {
-    margin: 40px 20px 40px auto;
+    margin: 40px 20px 0px auto;
     text-align: right;
 }
 
-.footer-3 {
-    margin: 40px 20px 20px 60px;
-}
-
-.footer-3 p {
-    margin-left: 10px;
-}
 form {
     display: flex;
     flex-direction: row;
@@ -236,12 +229,24 @@ form input {
 }
 
 #newsletter {
-    margin: 0px 40px 34px 40px;
+    margin: 40px;
 }
 
 .creater-name {
     padding: 20px 0px 20px;
     font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+    .foot {
+        flex-direction: column !important;
+        align-items: flex-start;
+    }
+
+    .footer-2 {
+        margin: 40px auto 40px 40px;
+        text-align: left;
+    }
 }
 
 
@@ -268,7 +273,7 @@ form button {
     font-weight: 800;
     font-size: 15px;
     padding: 5px 15px 5px 15px;
-    margin: 10px;
+    margin: 10px 0px;
     transition: 0.1s;
     color: white;
     transition: 0.3s;

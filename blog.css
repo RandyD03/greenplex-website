@@ -7,7 +7,7 @@
 }
 
 .page-title {
-    width: 100%;
+    max-width: 1200px;
     text-align: center;
     margin: 50px auto;
     padding: 40px;
@@ -22,11 +22,12 @@
 .grid {
     width: 100%;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: repeat(auto-fill, 400px);
     justify-content: center;
     gap: 2.5em;
-    padding: 40px;
-    margin: 50px 0;
+    padding: 40px 0px 40px;
+    grid-auto-flow: row;
+    margin: auto;
 }
 
 .grid div img {
@@ -54,7 +55,7 @@
 }
 
 
-.btn {
+.butn {
     color: #63666A;
     background: none;
     outline: none;
@@ -62,7 +63,7 @@
     cursor: pointer;
 }
 
-.btn::after {
+.butn::after {
     content: '';
     height: 2px;
     width: 100%;
@@ -71,7 +72,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.btn:hover::after {
+.butn:hover::after {
     content: '';
     height: 2px;
     width: 0%;
