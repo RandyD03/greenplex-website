@@ -10,16 +10,16 @@
 .slick-slider {
     margin-top: 15px;
     z-index: 1;
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 50px;
 }
 
 .bg {
     width: 100%;
-    height: 90vh;
+    height: auto;
+    min-height: 37vh;
     object-fit: cover;
-    object-position: 0px 60%;
 }
 
 /*body 2*/
