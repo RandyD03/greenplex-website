@@ -22,17 +22,6 @@
     object-position: 0px 60%;
 }
 
-.slide-1 p {
-    top: 45%;
-    margin-left: 100px;
-    position: absolute;
-    font-weight: 600;
-    color: white;
-    font-size: 5.0em;
-    text-shadow: 1px 2px black;
-}
-
-
 /*body 2*/
 .body-2{
     display: flex;
@@ -156,22 +145,23 @@
     font-family: cardo, sans-serif;
     text-align: center;
     font-size: 5.0em;
-    margin: 50px;
     color: white;
 }
 
 .b4-flex-1 {
     display: flex;
     flex-direction: row;
-    margin: 40px auto;
+    justify-content: space-evenly;
+    margin: 40px 0px;
+    text-align: center;
 }
 
 .b4-flex-1 p {
     margin: auto;
     color: #006600;
-    padding: 20px;
     font-size: 4.0em;
     font-weight: 600;
+    margin: 30px 0px;
 }
 
 .body-5 {
@@ -203,10 +193,6 @@
     height: 700px;
 }
 
-.list-item {
-    margin: 20px;
-}
-
 .list-item img {
     width: 90%;
     object-fit: contain;
@@ -218,6 +204,7 @@
     text-align: center;
     line-height: 3em;
     font-size: 1.2em;
+    padding: 10%;
 }
 
 .list-item section {
@@ -235,9 +222,8 @@
     background-image: linear-gradient(rgba(66, 36, 11, 0.5),rgba(0,0,0,0.5)), url("images/pexels-karolina-grabowska-4041393.jpg");
     background-size: cover;
     background-position: center center;
-    margin: auto;
     text-align: left;
-    height: 200px;
+    height: auto;
 }
 
 .blog p {
@@ -248,4 +234,15 @@
 
 .blog:hover p {
     font-size: 3.5em;
+}
+
+
+@media (max-width: 768px) {
+    .body-4 h2 {
+        font-size: 3em;
+    }
+
+    .b4-flex-1 p {
+        font-size: 2em;
+    }
 }
